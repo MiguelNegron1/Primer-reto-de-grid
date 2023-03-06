@@ -1,55 +1,91 @@
-body{
-    height: 100%;
-    width: 100%;
-
-}
-
-.slide{
-    /* height: 100%;
-    width: 100%; */
-    display: flex;
-    justify-content: flex-end;
-    align-content: end;
-}
-
-.contenedor{
+/* .contenedor{
     background-color: #fff1ff;
-    /* border: 5px solid #e1bee7; */
+    border: 5px solid #e1bee7;
     display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 100px 100px 300px;
-    grid-auto-flow: column;
+    grid-template-rows: 150px  150px;
+    grid-template-columns: 150px 150px ;
     gap: 20px;
+    width: 300px;
+    place-content: center;
+    place-items: end;
 }
 .item{
-    font-size: 2rem;
-    /* border: 5px  solid #00bcd4; */
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
+    font-size: 4rem;
+    border: 5px  solid #00bcd4;
+    justify-items: end;
+} */
+/* *{ */
+    /* box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-.item div{
-    padding: 3px;
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container{
+    display: grid;
+    width: 449px;
+    height: 449px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 50px;
+    place-content: center;
+    background-color: #3a630d;
+    
+}
+.item{
+    background-color: #add901;
+    display: grid;
+    place-items: end;
+}
+.item span{
+    display: block;
+    height: 90px;
+    width: 60px;
+    background-color: #61a81e;
+}
+.item-center{
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    height: 50px;
+    width: 50px;
+    background-color: #1f3207;
+}  */
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.item--green-yellow{
-    background-color: greenyellow;
+/* body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+} */
+
+.grid-container{
+    border: 3px solid green;
+    /* border-color:green ; */
+    /* width: 100px; */
+    height: 600px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    place-items: end;
+    place-content: center;
+    grid-auto-flow: column;
 }
-    .item--number--green{
-        background-color: rgb(8, 206, 8);
-    }
-.item--green-yellow {
-    background-color: greenyellow;
-}
-    .item--number--green--darker{
-        background-color: green;
-    }
-.item--green{
-    background-color: yellowgreen;
-}
-    .item--number--green--darkest{
-        background-color: rgb(2, 72, 2);
-    }
-.item--dark-green{
-    background-color: green;
+.item{
+    border: 3px solid greenyellow;
+    padding: 3xp;
+    font-size: 4rem;
 }
