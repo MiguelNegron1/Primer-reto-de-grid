@@ -1,91 +1,85 @@
-/* .contenedor{
-    background-color: #fff1ff;
-    border: 5px solid #e1bee7;
-    display: grid;
-    grid-template-rows: 150px  150px;
-    grid-template-columns: 150px 150px ;
-    gap: 20px;
-    width: 300px;
-    place-content: center;
-    place-items: end;
-}
-.item{
-    font-size: 4rem;
-    border: 5px  solid #00bcd4;
-    justify-items: end;
-} */
-/* *{ */
-    /* box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.grid-container{
-    display: grid;
-    width: 449px;
-    height: 449px;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 200px 200px;
-    gap: 50px;
-    place-content: center;
-    background-color: #3a630d;
-    
-}
-.item{
-    background-color: #add901;
-    display: grid;
-    place-items: end;
-}
-.item span{
-    display: block;
-    height: 90px;
-    width: 60px;
-    background-color: #61a81e;
-}
-.item-center{
-    position: absolute;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px);
-    height: 50px;
-    width: 50px;
-    background-color: #1f3207;
-}  */
-
-
-
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    /* padding: 5px; */
 }
-
-/* body{
-    width: 100vw;
-    height: 100vh;
-    background-color: aquamarine;
-} */
-
+body{
+    background-color: black;
+}
 .grid-container{
-    border: 3px solid green;
-    /* border-color:green ; */
-    /* width: 100px; */
-    height: 600px;
+    border-radius: 25px;
+    width: 100%;
+    height: 100vh;
     display: grid;
     gap: 15px;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 200px 200px;
-    place-items: end;
-    place-content: center;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(3, );
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-areas: 
+        'primera-img segunda-img segunda-img'
+        'tercera-img tercera-img cuarta-img'
+        'quinta-img sexta-img septima-img'
+        ;
 }
 .item{
-    border: 3px solid greenyellow;
-    padding: 3xp;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 0, 0, 0.295);
+
+    /* border: 3px solid greenyellow;
+    padding: 3xp; */
     font-size: 4rem;
+}
+.item-1{
+    border-radius: 25px;
+
+    background-image: url('/img/anime-demon-slayer-kimetsu-no-yaiba-kimetsu-no-yaiba-tanjirou-kamado-hd-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover; 
+    background-color: yellow;
+    grid-area: primera-img;
+
+}
+.item-2{
+    background-image: url('/img/anime-demon-slayer-kimetsu-no-yaiba-kokushibou-demon-slayer-hd-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    grid-area: segunda-img;
+    background-color: rgb(5, 203, 5);
+
+}
+.item-3{
+    background-image: url('/img/anime-demon-slayer-kimetsu-no-yaiba-tanjirou-kamado-hd-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    grid-area: tercera-img;
+}
+.item-4{
+    background-image: url('/img/1008472.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    grid-area: cuarta-img;
+}
+.item-5{
+    background-image: url('/img/kimetsu-no-yaiba-ogon-parni-devushka.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    grid-area:  quinta-img;
+}
+.item-6{
+    background-image: url('/img/kimetsu-no-yaiba-tanjiro-kamado-kamado-tanjirō-zenitsu-agatsuma-inosuke-hashibira-hd-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    grid-area: sexta-img;
+}
+.item-7{
+    background-image: url('/img/ultiima.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    grid-area: septima-img;
 }
